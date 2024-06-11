@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+</head>
+<style>
+    .header {
+        font-size: 13px;
+        line-height: 25px;
+        font-family: 'Merriweather', serif;
+        font-family: 'Roboto', sans-serif;
+        /* position: fixed; */
+    }
+
+    .nav-bar {
+        background-color: rgb(230, 233, 230);
+        text-align: right;
+        padding-right: 100px;
+    }
+
+    .nav-bar ul li {
+        display: inline-block;
+        padding: 15px 15px;
+        position: relative;
+    }
+
+    .nav-bar ul li a {
+        color: rgb(42, 27, 27);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .nav-bar ul li:hover {
+        background-color: rgb(196, 201, 196);
+        border-radius: 3px;
+    }
+
+    .sub-menu-1 {
+        display: none;
+    }
+
+    .nav-bar ul li:hover .sub-menu-1 {
+        display: block;
+        position: absolute;
+        background-color: rgb(233, 235, 233);
+        margin-top: 15px;
+        margin-left: -15px;
+    }
+
+    .nav-bar ul li:hover .sub-menu-1 ul {
+        display: block;
+        margin: 10px;
+    }
+
+    .nav-bar ul li:hover .sub-menu-1 ul li {
+        width: 250px;
+        padding: 10px;
+        border-bottom: 1px solid #4c4848;
+        background: transparent;
+        text-align: left;
+    }
+
+    .nav-bar ul li:hover .sub-menu-1 ul li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-bar ul li:hover .sub-menu-1 ul li:hover {
+        color: rgb(169, 132, 84);
+        background-color: #A9DFED;
+        color: transparent;
+    }
+
+    .fa-angle-right {
+        float: right;
+        padding-top: 5px;
+    }
+
+    .fa-angle-down {
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    .sub-menu-2 {
+        display: none;
+    }
+
+    .hover-me:hover .sub-menu-2 {
+        display: block;
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 260px;
+        background-color: rgb(233, 235, 233);
+    }
+
+    ul {
+        /* display: flex; */
+        /* flex-direction: row; */
+        margin: 0% 0% 0% 3%;
+        padding: 1% 2% 1% 1%;
+    }
+</style>
+
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li class="active"><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">WHAT WE TO</a>
+                <div class="sub-menu-1">
+                    <ul className='sub-list'>
+                        <li class="hover-me"><a href="">WEDDING SERVICES</a>
+                            <div class="sub-menu-2">
+
+                                <ul className='sub-list'>
+
+                                    <li className='list'><a href="">WEDDING DECOR</a></li>
+                                    <li className='list'><a href="">WEDDING PLANNERS</a></li>
+                                    <li className='list'><a href="">WEDDING SELECTION</a></li>
+                                    <li className='list'><a href="">HOSPITALITY</a></li>
+                                    <li className='list'><a href="">CATERING</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="hover-me"><a href="">WEDDING PLANNING & MANAGEMENT</a>
+                            <div class="sub-menu-2">
+                                <ul className='sub-list'>
+                                    <li><a href="">COMPLETE WEDDING PLANNING</a></li>
+                                    <li><a href="">PARTIAL WEDDING PLANNING</a></li>
+                                    <li><a href="">THEME-BASED WEDDING PLANNING</a></li>
+                                    <li><a href="">DESTINATION WEDDING PLANNING</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="">ENTERTAINMENT</a>
+                            <div class="sub-menu-2">
+                                <ul className='sub-list'>
+                                    <li><a href="">ARTIST MANAGEMENT</a></li>
+                                    <li><a href="">ANCHORT</a></li>
+                                    <li><a href="">BOLLYWOOD SINGERS</a></li>
+                                    <li><a href="">CELEBRITY MANAGEMENT</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">CORPORATE EVENT</a></li>
+            <li><a href="">WEDDING DESTINATION</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="">INDIAN</a></li>
+                        <li><a href="">INTERNATIONAL</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">MEMORIES</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="">EVENT</a></li>
+                        <li><a href="">WEDDING GALLERY</a></li>
+                        <li><a href="">PHOTO GALLERY</a></li>
+                        <li><a href="">VIDEO GALLERY</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">REACH US</a></li>
+            <li><a href="">SIGN UP</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

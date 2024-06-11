@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Café Name - Contact</title>
+    <link rel="stylesheet" href="1-style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="d:\Full stack\cafe\img\IMG_20230913_162252-removebg-preview.png" width="150px">
+        </div>
+
+        <nav>
+            <li>
+                <li><a href="Cafe.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </li>
+        </nav>
+    </header>
+    
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Feel free to get in touch with us:</p>
+        <ul>
+            <li>Email: Destinocafe@gmail.com  </li>
+            <li>Phone:+91 94285 53006</li>
+            <li>Address:Destino Cafe canale road, surat, india</li>
+        </ul>
+    </section>
+    
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+        <p>Send us a message:</p>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Deatino Café. All rights reserved.</p>
+    </footer>
+</body>
+</html>
